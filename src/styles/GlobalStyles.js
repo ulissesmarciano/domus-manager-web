@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
 
+    body {
+        background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.text};
+    }
+
     a {
         text-decoration: none;
         color: #000;
